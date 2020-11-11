@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('002_producto',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){this.on('afterSave',function(fieldsData){location.reload();});});
