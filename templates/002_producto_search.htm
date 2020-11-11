@@ -1,0 +1,591 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel 002_producto search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN PROD_ID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PROD_ID}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="PROD_ID" 
+	
+	data-signal-error-for="PROD_ID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="PROD_ID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PROD_ID}">
+		{$label 002_producto PROD_ID }	</label>
+	<div class="r-search-option">
+		{$searchtype_PROD_ID}
+	</div>
+	<div class="r-search-field">
+		{$PROD_ID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PROD_ID_editcontrol1}
+	</div>
+	
+</div>
+
+{END PROD_ID_fieldblock}
+											
+{BEGIN RUBRO_ID_FK_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RUBRO_ID_FK}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="RUBRO_ID_FK" 
+	
+	data-signal-error-for="RUBRO_ID_FK{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="RUBRO_ID_FK" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_RUBRO_ID_FK}">
+		{$label 002_producto RUBRO_ID_FK }	</label>
+	<div class="r-search-option">
+		{$searchtype_RUBRO_ID_FK}
+	</div>
+	<div class="r-search-field">
+		{$RUBRO_ID_FK_editcontrol}	</div>
+	<div class="r-search-field">
+		{$RUBRO_ID_FK_editcontrol1}
+	</div>
+	
+</div>
+
+{END RUBRO_ID_FK_fieldblock}
+											
+{BEGIN VIGENCIA_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VIGENCIA}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="VIGENCIA" 
+	
+	data-signal-error-for="VIGENCIA{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="VIGENCIA" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_VIGENCIA}">
+		{$label 002_producto VIGENCIA }	</label>
+	<div class="r-search-option">
+		{$searchtype_VIGENCIA}
+	</div>
+	<div class="r-search-field">
+		{$VIGENCIA_editcontrol}	</div>
+	<div class="r-search-field">
+		{$VIGENCIA_editcontrol1}
+	</div>
+	
+</div>
+
+{END VIGENCIA_fieldblock}
+											
+{BEGIN TIPO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="TIPO" 
+	
+	data-signal-error-for="TIPO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="TIPO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TIPO}">
+		{$label 002_producto TIPO }	</label>
+	<div class="r-search-option">
+		{$searchtype_TIPO}
+	</div>
+	<div class="r-search-field">
+		{$TIPO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TIPO_editcontrol1}
+	</div>
+	
+</div>
+
+{END TIPO_fieldblock}
+											
+{BEGIN UEJ_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UEJ}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="UEJ" 
+	
+	data-signal-error-for="UEJ{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="UEJ" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UEJ}">
+		{$label 002_producto UEJ }	</label>
+	<div class="r-search-option">
+		{$searchtype_UEJ}
+	</div>
+	<div class="r-search-field">
+		{$UEJ_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UEJ_editcontrol1}
+	</div>
+	
+</div>
+
+{END UEJ_fieldblock}
+											
+{BEGIN RUBRO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RUBRO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="RUBRO" 
+	
+	data-signal-error-for="RUBRO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="RUBRO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_RUBRO}">
+		{$label 002_producto RUBRO }	</label>
+	<div class="r-search-option">
+		{$searchtype_RUBRO}
+	</div>
+	<div class="r-search-field">
+		{$RUBRO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$RUBRO_editcontrol1}
+	</div>
+	
+</div>
+
+{END RUBRO_fieldblock}
+											
+{BEGIN PRODUCTO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PRODUCTO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="PRODUCTO" 
+	
+	data-signal-error-for="PRODUCTO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="PRODUCTO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PRODUCTO}">
+		{$label 002_producto PRODUCTO }	</label>
+	<div class="r-search-option">
+		{$searchtype_PRODUCTO}
+	</div>
+	<div class="r-search-field">
+		{$PRODUCTO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PRODUCTO_editcontrol1}
+	</div>
+	
+</div>
+
+{END PRODUCTO_fieldblock}
+											
+{BEGIN FUENTE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FUENTE}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="FUENTE" 
+	
+	data-signal-error-for="FUENTE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="FUENTE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FUENTE}">
+		{$label 002_producto FUENTE }	</label>
+	<div class="r-search-option">
+		{$searchtype_FUENTE}
+	</div>
+	<div class="r-search-field">
+		{$FUENTE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FUENTE_editcontrol1}
+	</div>
+	
+</div>
+
+{END FUENTE_fieldblock}
+											
+{BEGIN REC_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REC}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="REC" 
+	
+	data-signal-error-for="REC{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="REC" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_REC}">
+		{$label 002_producto REC }	</label>
+	<div class="r-search-option">
+		{$searchtype_REC}
+	</div>
+	<div class="r-search-field">
+		{$REC_editcontrol}	</div>
+	<div class="r-search-field">
+		{$REC_editcontrol1}
+	</div>
+	
+</div>
+
+{END REC_fieldblock}
+											
+{BEGIN DESCRIPCION_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DESCRIPCION}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="DESCRIPCION" 
+	
+	data-signal-error-for="DESCRIPCION{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="DESCRIPCION" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DESCRIPCION}">
+		{$label 002_producto DESCRIPCION }	</label>
+	<div class="r-search-option">
+		{$searchtype_DESCRIPCION}
+	</div>
+	<div class="r-search-field">
+		{$DESCRIPCION_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DESCRIPCION_editcontrol1}
+	</div>
+	
+</div>
+
+{END DESCRIPCION_fieldblock}
+											
+{BEGIN PROD_PRESUPUESTO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PROD_PRESUPUESTO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="PROD_PRESUPUESTO" 
+	
+	data-signal-error-for="PROD_PRESUPUESTO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="PROD_PRESUPUESTO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PROD_PRESUPUESTO}">
+		{$label 002_producto PROD_PRESUPUESTO }	</label>
+	<div class="r-search-option">
+		{$searchtype_PROD_PRESUPUESTO}
+	</div>
+	<div class="r-search-field">
+		{$PROD_PRESUPUESTO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PROD_PRESUPUESTO_editcontrol1}
+	</div>
+	
+</div>
+
+{END PROD_PRESUPUESTO_fieldblock}
+											
+{BEGIN Dependencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Dependencia}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Dependencia" 
+	
+	data-signal-error-for="Dependencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="Dependencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Dependencia}">
+		{$label 002_producto Dependencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_Dependencia}
+	</div>
+	<div class="r-search-field">
+		{$Dependencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Dependencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END Dependencia_fieldblock}
+											
+{BEGIN UsuarioResp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UsuarioResp}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="UsuarioResp" 
+	
+	data-signal-error-for="UsuarioResp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="UsuarioResp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UsuarioResp}">
+		{$label 002_producto UsuarioResp }	</label>
+	<div class="r-search-option">
+		{$searchtype_UsuarioResp}
+	</div>
+	<div class="r-search-field">
+		{$UsuarioResp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UsuarioResp_editcontrol1}
+	</div>
+	
+</div>
+
+{END UsuarioResp_fieldblock}
+											
+{BEGIN META_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_META}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="META" 
+	
+	data-signal-error-for="META{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="META" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_META}">
+		{$label 002_producto META }	</label>
+	<div class="r-search-option">
+		{$searchtype_META}
+	</div>
+	<div class="r-search-field">
+		{$META_editcontrol}	</div>
+	<div class="r-search-field">
+		{$META_editcontrol1}
+	</div>
+	
+</div>
+
+{END META_fieldblock}
+											
+{BEGIN SALDO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SALDO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="SALDO" 
+	
+	data-signal-error-for="SALDO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="SALDO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SALDO}">
+		{$label 002_producto SALDO }	</label>
+	<div class="r-search-option">
+		{$searchtype_SALDO}
+	</div>
+	<div class="r-search-field">
+		{$SALDO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SALDO_editcontrol1}
+	</div>
+	
+</div>
+
+{END SALDO_fieldblock}
+											
+{BEGIN OBJ_ESPECIFICO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_OBJ_ESPECIFICO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="OBJ-ESPECIFICO" 
+	
+	data-signal-error-for="OBJ_ESPECIFICO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="OBJ_ESPECIFICO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_OBJ_ESPECIFICO}">
+		{$label 002_producto OBJ_ESPECIFICO }	</label>
+	<div class="r-search-option">
+		{$searchtype_OBJ_ESPECIFICO}
+	</div>
+	<div class="r-search-field">
+		{$OBJ_ESPECIFICO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$OBJ_ESPECIFICO_editcontrol1}
+	</div>
+	
+</div>
+
+{END OBJ_ESPECIFICO_fieldblock}
+											
+{BEGIN INDICADORES_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_INDICADORES}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="INDICADORES" 
+	
+	data-signal-error-for="INDICADORES{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="INDICADORES" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_INDICADORES}">
+		{$label 002_producto INDICADORES }	</label>
+	<div class="r-search-option">
+		{$searchtype_INDICADORES}
+	</div>
+	<div class="r-search-field">
+		{$INDICADORES_editcontrol}	</div>
+	<div class="r-search-field">
+		{$INDICADORES_editcontrol1}
+	</div>
+	
+</div>
+
+{END INDICADORES_fieldblock}
+											
+{BEGIN META_ANIO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_META_ANIO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="META_ANIO" 
+	
+	data-signal-error-for="META_ANIO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="META_ANIO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_META_ANIO}">
+		{$label 002_producto META_ANIO }	</label>
+	<div class="r-search-option">
+		{$searchtype_META_ANIO}
+	</div>
+	<div class="r-search-field">
+		{$META_ANIO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$META_ANIO_editcontrol1}
+	</div>
+	
+</div>
+
+{END META_ANIO_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

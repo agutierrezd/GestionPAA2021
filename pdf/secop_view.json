@@ -1,0 +1,368 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel secop view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel secop secop_id }","bold":true},{"text":{$secop_id_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel secop secop_nombre_entidad }","bold":true},{"text":{$secop_nombre_entidad_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel secop secop_nit_entidad }","bold":true},{"text":{$secop_nit_entidad_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel secop secop_departamento }","bold":true},{"text":{$secop_departamento_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel secop secop_ciudad }","bold":true},{"text":{$secop_ciudad_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel secop secop_localizaci_n }","bold":true},{"text":{$secop_localizaci_n_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel secop secop_orden }","bold":true},{"text":{$secop_orden_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel secop secop_sector }","bold":true},{"text":{$secop_sector_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel secop secop_rama }","bold":true},{"text":{$secop_rama_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel secop secop_entidad_centralizada }","bold":true},{"text":{$secop_entidad_centralizada_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel secop secop_proceso_de_compra }","bold":true},{"text":{$secop_proceso_de_compra_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel secop secop_id_contrato }","bold":true},{"text":{$secop_id_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel secop secop_referencia_del_contrato }","bold":true},{"text":{$secop_referencia_del_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel secop secop_estado_contrato }","bold":true},{"text":{$secop_estado_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel secop secop_codigo_de_categoria_principal }","bold":true},{"text":{$secop_codigo_de_categoria_principal_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel secop secop_descripcion_del_proceso }","bold":true},{"text":{$secop_descripcion_del_proceso_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel secop secop_tipo_de_contrato }","bold":true},{"text":{$secop_tipo_de_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel secop secop_modalidad_de_contratacion }","bold":true},{"text":{$secop_modalidad_de_contratacion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel secop secop_justificacion_modalidad_de }","bold":true},{"text":{$secop_justificacion_modalidad_de_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field19}","stack":[{"text":"{$jslabel secop secop_fecha_de_firma }","bold":true},{"text":{$secop_fecha_de_firma_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel secop secop_fecha_de_inicio_del_contrato }","bold":true},{"text":{$secop_fecha_de_inicio_del_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field21}","stack":[{"text":"{$jslabel secop secop_fecha_de_fin_del_contrato }","bold":true},{"text":{$secop_fecha_de_fin_del_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel secop secop_fecha_de_inicio_de_ejecucion }","bold":true},{"text":{$secop_fecha_de_inicio_de_ejecucion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel secop secop_fecha_de_fin_de_ejecucion }","bold":true},{"text":{$secop_fecha_de_fin_de_ejecucion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel secop secop_condiciones_de_entrega }","bold":true},{"text":{$secop_condiciones_de_entrega_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","stack":[{"text":"{$jslabel secop secop_tipodocproveedor }","bold":true},{"text":{$secop_tipodocproveedor_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field26}","stack":[{"text":"{$jslabel secop secop_documento_proveedor }","bold":true},{"text":{$secop_documento_proveedor_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field27}","stack":[{"text":"{$jslabel secop secop_proveedor_adjudicado }","bold":true},{"text":{$secop_proveedor_adjudicado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel secop secop_es_grupo }","bold":true},{"text":{$secop_es_grupo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field29}","stack":[{"text":"{$jslabel secop secop_es_pyme }","bold":true},{"text":{$secop_es_pyme_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field30}","stack":[{"text":"{$jslabel secop secop_habilita_pago_adelantado }","bold":true},{"text":{$secop_habilita_pago_adelantado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field31}","stack":[{"text":"{$jslabel secop secop_liquidaci_n }","bold":true},{"text":{$secop_liquidaci_n_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field32}","stack":[{"text":"{$jslabel secop secop_obligaci_n_ambiental }","bold":true},{"text":{$secop_obligaci_n_ambiental_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field33}","stack":[{"text":"{$jslabel secop secop_obligaciones_postconsumo }","bold":true},{"text":{$secop_obligaciones_postconsumo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field34}","stack":[{"text":"{$jslabel secop secop_reversion }","bold":true},{"text":{$secop_reversion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel secop secop_valor_del_contrato }","bold":true},{"text":{$secop_valor_del_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","stack":[{"text":"{$jslabel secop secop_valor_de_pago_adelantado }","bold":true},{"text":{$secop_valor_de_pago_adelantado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field37}","stack":[{"text":"{$jslabel secop secop_valor_facturado }","bold":true},{"text":{$secop_valor_facturado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field38}","stack":[{"text":"{$jslabel secop secop_valor_pendiente_de_pago }","bold":true},{"text":{$secop_valor_pendiente_de_pago_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field39}","stack":[{"text":"{$jslabel secop secop_valor_pagado }","bold":true},{"text":{$secop_valor_pagado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field40}","stack":[{"text":"{$jslabel secop secop_valor_amortizado }","bold":true},{"text":{$secop_valor_amortizado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field41}","stack":[{"text":"{$jslabel secop secop_valor_pendiente_de }","bold":true},{"text":{$secop_valor_pendiente_de_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field42}","stack":[{"text":"{$jslabel secop secop_valor_pendiente_de_ejecucion }","bold":true},{"text":{$secop_valor_pendiente_de_ejecucion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field43}","stack":[{"text":"{$jslabel secop secop_estado_bpin }","bold":true},{"text":{$secop_estado_bpin_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field44}","stack":[{"text":"{$jslabel secop secop_c_digo_bpin }","bold":true},{"text":{$secop_c_digo_bpin_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field45}","stack":[{"text":"{$jslabel secop secop_anno_bpin }","bold":true},{"text":{$secop_anno_bpin_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field46}","stack":[{"text":"{$jslabel secop secop_saldo_cdp }","bold":true},{"text":{$secop_saldo_cdp_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field47}","stack":[{"text":"{$jslabel secop secop_saldo_vigencia }","bold":true},{"text":{$secop_saldo_vigencia_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field48}","stack":[{"text":"{$jslabel secop secop_espostconflicto }","bold":true},{"text":{$secop_espostconflicto_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field49}","stack":[{"text":"{$jslabel secop secop_urlproceso_url }","bold":true},{"text":{$secop_urlproceso_url_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field50}","stack":[{"text":"{$jslabel secop secop_destino_gasto }","bold":true},{"text":{$secop_destino_gasto_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field51}","stack":[{"text":"{$jslabel secop secop_origen_de_los_recursos }","bold":true},{"text":{$secop_origen_de_los_recursos_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field52}","stack":[{"text":"{$jslabel secop secop_d_as_adicionados }","bold":true},{"text":{$secop_d_as_adicionados_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel secop secop_puntos_del_acuerdo }","bold":true},{"text":{$secop_puntos_del_acuerdo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel secop secop_pilares_del_acuerdo }","bold":true},{"text":{$secop_pilares_del_acuerdo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

@@ -1,0 +1,285 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel secop export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field}","text":{$secop_id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$secop_nombre_entidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$secop_nit_entidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$secop_departamento_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$secop_ciudad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$secop_localizaci_n_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$secop_orden_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field7}","text":{$secop_sector_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field8}","text":{$secop_rama_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$secop_entidad_centralizada_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field10}","text":{$secop_proceso_de_compra_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field11}","text":{$secop_id_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field12}","text":{$secop_referencia_del_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$secop_estado_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field14}","text":{$secop_codigo_de_categoria_principal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field15}","text":{$secop_descripcion_del_proceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field16}","text":{$secop_tipo_de_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field17}","text":{$secop_modalidad_de_contratacion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field18}","text":{$secop_justificacion_modalidad_de_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field19}","text":{$secop_fecha_de_firma_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field20}","text":{$secop_fecha_de_inicio_del_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field21}","text":{$secop_fecha_de_fin_del_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field22}","text":{$secop_fecha_de_inicio_de_ejecucion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field23}","text":{$secop_fecha_de_fin_de_ejecucion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field24}","text":{$secop_condiciones_de_entrega_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field25}","text":{$secop_tipodocproveedor_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field26}","text":{$secop_documento_proveedor_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field27}","text":{$secop_proveedor_adjudicado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field28}","text":{$secop_es_grupo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field29}","text":{$secop_es_pyme_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field30}","text":{$secop_habilita_pago_adelantado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field31}","text":{$secop_liquidaci_n_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field32}","text":{$secop_obligaci_n_ambiental_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field33}","text":{$secop_obligaciones_postconsumo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field34}","text":{$secop_reversion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field35}","text":{$secop_valor_del_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field36}","text":{$secop_valor_de_pago_adelantado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field37}","text":{$secop_valor_facturado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field38}","text":{$secop_valor_pendiente_de_pago_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field39}","text":{$secop_valor_pagado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field40}","text":{$secop_valor_amortizado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field41}","text":{$secop_valor_pendiente_de_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field42}","text":{$secop_valor_pendiente_de_ejecucion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field43}","text":{$secop_estado_bpin_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field44}","text":{$secop_c_digo_bpin_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field45}","text":{$secop_anno_bpin_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field46}","text":{$secop_saldo_cdp_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field47}","text":{$secop_saldo_vigencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field48}","text":{$secop_espostconflicto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field49}","text":{$secop_urlproceso_url_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field50}","text":{$secop_destino_gasto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field51}","text":{$secop_origen_de_los_recursos_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field52}","text":{$secop_d_as_adicionados_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field53}","text":{$secop_puntos_del_acuerdo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field54}","text":{$secop_pilares_del_acuerdo_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

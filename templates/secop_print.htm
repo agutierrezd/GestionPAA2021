@@ -1,0 +1,3647 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel secop print}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<table data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_id_class}
+			"
+
+			data-field="secop_id"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_id_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_id">
+	{$label secop secop_id }	</span>
+{END secop_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_nombre_entidad_class}
+			"
+
+			data-field="secop_nombre_entidad"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_nombre_entidad_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_nombre_entidad">
+	{$label secop secop_nombre_entidad }	</span>
+{END secop_nombre_entidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_nit_entidad_class}
+			"
+
+			data-field="secop_nit_entidad"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_nit_entidad_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_nit_entidad">
+	{$label secop secop_nit_entidad }	</span>
+{END secop_nit_entidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_departamento_class}
+			"
+
+			data-field="secop_departamento"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_departamento_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_departamento">
+	{$label secop secop_departamento }	</span>
+{END secop_departamento_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_ciudad_class}
+			"
+
+			data-field="secop_ciudad"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_ciudad_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_ciudad">
+	{$label secop secop_ciudad }	</span>
+{END secop_ciudad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_localizaci_n_class}
+			"
+
+			data-field="secop_localizaci_n"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_localizaci_n_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_localizaci_n">
+	{$label secop secop_localizaci_n }	</span>
+{END secop_localizaci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_orden_class}
+			"
+
+			data-field="secop_orden"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_orden_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_orden">
+	{$label secop secop_orden }	</span>
+{END secop_orden_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_sector_class}
+			"
+
+			data-field="secop_sector"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_sector_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_sector">
+	{$label secop secop_sector }	</span>
+{END secop_sector_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_rama_class}
+			"
+
+			data-field="secop_rama"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_rama_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_rama">
+	{$label secop secop_rama }	</span>
+{END secop_rama_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_entidad_centralizada_class}
+			"
+
+			data-field="secop_entidad_centralizada"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_entidad_centralizada_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_entidad_centralizada">
+	{$label secop secop_entidad_centralizada }	</span>
+{END secop_entidad_centralizada_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_proceso_de_compra_class}
+			"
+
+			data-field="secop_proceso_de_compra"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_proceso_de_compra_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_proceso_de_compra">
+	{$label secop secop_proceso_de_compra }	</span>
+{END secop_proceso_de_compra_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_id_contrato_class}
+			"
+
+			data-field="secop_id_contrato"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_id_contrato_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_id_contrato">
+	{$label secop secop_id_contrato }	</span>
+{END secop_id_contrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_referencia_del_contrato_class}
+			"
+
+			data-field="secop_referencia_del_contrato"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_referencia_del_contrato_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_referencia_del_contrato">
+	{$label secop secop_referencia_del_contrato }	</span>
+{END secop_referencia_del_contrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_estado_contrato_class}
+			"
+
+			data-field="secop_estado_contrato"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_estado_contrato_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_estado_contrato">
+	{$label secop secop_estado_contrato }	</span>
+{END secop_estado_contrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_codigo_de_categoria_principal_class}
+			"
+
+			data-field="secop_codigo_de_categoria_principal"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_codigo_de_categoria_principal_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_codigo_de_categoria_principal">
+	{$label secop secop_codigo_de_categoria_principal }	</span>
+{END secop_codigo_de_categoria_principal_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_descripcion_del_proceso_class}
+			"
+
+			data-field="secop_descripcion_del_proceso"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_descripcion_del_proceso_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_descripcion_del_proceso">
+	{$label secop secop_descripcion_del_proceso }	</span>
+{END secop_descripcion_del_proceso_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_tipo_de_contrato_class}
+			"
+
+			data-field="secop_tipo_de_contrato"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_tipo_de_contrato_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_tipo_de_contrato">
+	{$label secop secop_tipo_de_contrato }	</span>
+{END secop_tipo_de_contrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_modalidad_de_contratacion_class}
+			"
+
+			data-field="secop_modalidad_de_contratacion"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_modalidad_de_contratacion_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_modalidad_de_contratacion">
+	{$label secop secop_modalidad_de_contratacion }	</span>
+{END secop_modalidad_de_contratacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_justificacion_modalidad_de_class}
+			"
+
+			data-field="secop_justificacion_modalidad_de"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_justificacion_modalidad_de_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_justificacion_modalidad_de">
+	{$label secop secop_justificacion_modalidad_de }	</span>
+{END secop_justificacion_modalidad_de_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_firma_class}
+			"
+
+			data-field="secop_fecha_de_firma"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_firma_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_firma">
+	{$label secop secop_fecha_de_firma }	</span>
+{END secop_fecha_de_firma_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_inicio_del_contrato_class}
+			"
+
+			data-field="secop_fecha_de_inicio_del_contrato"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_inicio_del_contrato_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_inicio_del_contrato">
+	{$label secop secop_fecha_de_inicio_del_contrato }	</span>
+{END secop_fecha_de_inicio_del_contrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_fin_del_contrato_class}
+			"
+
+			data-field="secop_fecha_de_fin_del_contrato"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_fin_del_contrato_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_fin_del_contrato">
+	{$label secop secop_fecha_de_fin_del_contrato }	</span>
+{END secop_fecha_de_fin_del_contrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_inicio_de_ejecucion_class}
+			"
+
+			data-field="secop_fecha_de_inicio_de_ejecucion"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_inicio_de_ejecucion_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_inicio_de_ejecucion">
+	{$label secop secop_fecha_de_inicio_de_ejecucion }	</span>
+{END secop_fecha_de_inicio_de_ejecucion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_fin_de_ejecucion_class}
+			"
+
+			data-field="secop_fecha_de_fin_de_ejecucion"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_fin_de_ejecucion_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_fin_de_ejecucion">
+	{$label secop secop_fecha_de_fin_de_ejecucion }	</span>
+{END secop_fecha_de_fin_de_ejecucion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+				 
+					{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_condiciones_de_entrega_class}
+			"
+
+			data-field="secop_condiciones_de_entrega"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_condiciones_de_entrega_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_condiciones_de_entrega">
+	{$label secop secop_condiciones_de_entrega }	</span>
+{END secop_condiciones_de_entrega_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+				 
+					{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_tipodocproveedor_class}
+			"
+
+			data-field="secop_tipodocproveedor"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_tipodocproveedor_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_tipodocproveedor">
+	{$label secop secop_tipodocproveedor }	</span>
+{END secop_tipodocproveedor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+				 
+					{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_documento_proveedor_class}
+			"
+
+			data-field="secop_documento_proveedor"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_documento_proveedor_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_documento_proveedor">
+	{$label secop secop_documento_proveedor }	</span>
+{END secop_documento_proveedor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+				 
+					{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_proveedor_adjudicado_class}
+			"
+
+			data-field="secop_proveedor_adjudicado"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_proveedor_adjudicado_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_proveedor_adjudicado">
+	{$label secop secop_proveedor_adjudicado }	</span>
+{END secop_proveedor_adjudicado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+				 
+					{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_es_grupo_class}
+			"
+
+			data-field="secop_es_grupo"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_es_grupo_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_es_grupo">
+	{$label secop secop_es_grupo }	</span>
+{END secop_es_grupo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+				 
+					{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_es_pyme_class}
+			"
+
+			data-field="secop_es_pyme"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_es_pyme_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_es_pyme">
+	{$label secop secop_es_pyme }	</span>
+{END secop_es_pyme_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
+				 
+					{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_habilita_pago_adelantado_class}
+			"
+
+			data-field="secop_habilita_pago_adelantado"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_habilita_pago_adelantado_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_habilita_pago_adelantado">
+	{$label secop secop_habilita_pago_adelantado }	</span>
+{END secop_habilita_pago_adelantado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+				 
+					{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_liquidaci_n_class}
+			"
+
+			data-field="secop_liquidaci_n"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_liquidaci_n_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_liquidaci_n">
+	{$label secop secop_liquidaci_n }	</span>
+{END secop_liquidaci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+				 
+					{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_obligaci_n_ambiental_class}
+			"
+
+			data-field="secop_obligaci_n_ambiental"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_obligaci_n_ambiental_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_obligaci_n_ambiental">
+	{$label secop secop_obligaci_n_ambiental }	</span>
+{END secop_obligaci_n_ambiental_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
+				 
+					{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_obligaciones_postconsumo_class}
+			"
+
+			data-field="secop_obligaciones_postconsumo"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_obligaciones_postconsumo_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_obligaciones_postconsumo">
+	{$label secop secop_obligaciones_postconsumo }	</span>
+{END secop_obligaciones_postconsumo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
+				 
+					{BEGIN cellblock_grid_headcell_field34}
+	<th
+	
+	{$cell_grid_headcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_reversion_class}
+			"
+
+			data-field="secop_reversion"
+	
+	data-cellId="grid_headcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_reversion_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_reversion">
+	{$label secop secop_reversion }	</span>
+{END secop_reversion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field34}
+				 
+					{BEGIN cellblock_grid_headcell_field35}
+	<th
+	
+	{$cell_grid_headcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_del_contrato_class}
+			"
+
+			data-field="secop_valor_del_contrato"
+	
+	data-cellId="grid_headcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_del_contrato_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_del_contrato">
+	{$label secop secop_valor_del_contrato }	</span>
+{END secop_valor_del_contrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field35}
+				 
+					{BEGIN cellblock_grid_headcell_field36}
+	<th
+	
+	{$cell_grid_headcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_de_pago_adelantado_class}
+			"
+
+			data-field="secop_valor_de_pago_adelantado"
+	
+	data-cellId="grid_headcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_de_pago_adelantado_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_de_pago_adelantado">
+	{$label secop secop_valor_de_pago_adelantado }	</span>
+{END secop_valor_de_pago_adelantado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field36}
+				 
+					{BEGIN cellblock_grid_headcell_field37}
+	<th
+	
+	{$cell_grid_headcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_facturado_class}
+			"
+
+			data-field="secop_valor_facturado"
+	
+	data-cellId="grid_headcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_facturado_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_facturado">
+	{$label secop secop_valor_facturado }	</span>
+{END secop_valor_facturado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field37}
+				 
+					{BEGIN cellblock_grid_headcell_field38}
+	<th
+	
+	{$cell_grid_headcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_pendiente_de_pago_class}
+			"
+
+			data-field="secop_valor_pendiente_de_pago"
+	
+	data-cellId="grid_headcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_pendiente_de_pago_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_pendiente_de_pago">
+	{$label secop secop_valor_pendiente_de_pago }	</span>
+{END secop_valor_pendiente_de_pago_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field38}
+				 
+					{BEGIN cellblock_grid_headcell_field39}
+	<th
+	
+	{$cell_grid_headcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_pagado_class}
+			"
+
+			data-field="secop_valor_pagado"
+	
+	data-cellId="grid_headcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_pagado_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_pagado">
+	{$label secop secop_valor_pagado }	</span>
+{END secop_valor_pagado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field39}
+				 
+					{BEGIN cellblock_grid_headcell_field40}
+	<th
+	
+	{$cell_grid_headcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_amortizado_class}
+			"
+
+			data-field="secop_valor_amortizado"
+	
+	data-cellId="grid_headcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_amortizado_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_amortizado">
+	{$label secop secop_valor_amortizado }	</span>
+{END secop_valor_amortizado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field40}
+				 
+					{BEGIN cellblock_grid_headcell_field41}
+	<th
+	
+	{$cell_grid_headcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_pendiente_de_class}
+			"
+
+			data-field="secop_valor_pendiente_de"
+	
+	data-cellId="grid_headcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_pendiente_de_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_pendiente_de">
+	{$label secop secop_valor_pendiente_de }	</span>
+{END secop_valor_pendiente_de_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field41}
+				 
+					{BEGIN cellblock_grid_headcell_field42}
+	<th
+	
+	{$cell_grid_headcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_pendiente_de_ejecucion_class}
+			"
+
+			data-field="secop_valor_pendiente_de_ejecucion"
+	
+	data-cellId="grid_headcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_pendiente_de_ejecucion_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_pendiente_de_ejecucion">
+	{$label secop secop_valor_pendiente_de_ejecucion }	</span>
+{END secop_valor_pendiente_de_ejecucion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field42}
+				 
+					{BEGIN cellblock_grid_headcell_field43}
+	<th
+	
+	{$cell_grid_headcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_estado_bpin_class}
+			"
+
+			data-field="secop_estado_bpin"
+	
+	data-cellId="grid_headcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_estado_bpin_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_estado_bpin">
+	{$label secop secop_estado_bpin }	</span>
+{END secop_estado_bpin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field43}
+				 
+					{BEGIN cellblock_grid_headcell_field44}
+	<th
+	
+	{$cell_grid_headcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_c_digo_bpin_class}
+			"
+
+			data-field="secop_c_digo_bpin"
+	
+	data-cellId="grid_headcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_c_digo_bpin_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_c_digo_bpin">
+	{$label secop secop_c_digo_bpin }	</span>
+{END secop_c_digo_bpin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field44}
+				 
+					{BEGIN cellblock_grid_headcell_field45}
+	<th
+	
+	{$cell_grid_headcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_anno_bpin_class}
+			"
+
+			data-field="secop_anno_bpin"
+	
+	data-cellId="grid_headcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_anno_bpin_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_anno_bpin">
+	{$label secop secop_anno_bpin }	</span>
+{END secop_anno_bpin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field45}
+				 
+					{BEGIN cellblock_grid_headcell_field46}
+	<th
+	
+	{$cell_grid_headcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_saldo_cdp_class}
+			"
+
+			data-field="secop_saldo_cdp"
+	
+	data-cellId="grid_headcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_saldo_cdp_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_saldo_cdp">
+	{$label secop secop_saldo_cdp }	</span>
+{END secop_saldo_cdp_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field46}
+				 
+					{BEGIN cellblock_grid_headcell_field47}
+	<th
+	
+	{$cell_grid_headcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_saldo_vigencia_class}
+			"
+
+			data-field="secop_saldo_vigencia"
+	
+	data-cellId="grid_headcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_saldo_vigencia_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field102" {$item_simple_grid_field102} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_saldo_vigencia">
+	{$label secop secop_saldo_vigencia }	</span>
+{END secop_saldo_vigencia_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field47}
+				 
+					{BEGIN cellblock_grid_headcell_field48}
+	<th
+	
+	{$cell_grid_headcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_espostconflicto_class}
+			"
+
+			data-field="secop_espostconflicto"
+	
+	data-cellId="grid_headcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_espostconflicto_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field103" {$item_simple_grid_field103} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_espostconflicto">
+	{$label secop secop_espostconflicto }	</span>
+{END secop_espostconflicto_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field48}
+				 
+					{BEGIN cellblock_grid_headcell_field49}
+	<th
+	
+	{$cell_grid_headcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_urlproceso_url_class}
+			"
+
+			data-field="secop_urlproceso_url"
+	
+	data-cellId="grid_headcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_urlproceso_url_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field104" {$item_simple_grid_field104} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_urlproceso_url">
+	{$label secop secop_urlproceso_url }	</span>
+{END secop_urlproceso_url_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field49}
+				 
+					{BEGIN cellblock_grid_headcell_field50}
+	<th
+	
+	{$cell_grid_headcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_destino_gasto_class}
+			"
+
+			data-field="secop_destino_gasto"
+	
+	data-cellId="grid_headcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_destino_gasto_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field105" {$item_simple_grid_field105} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_destino_gasto">
+	{$label secop secop_destino_gasto }	</span>
+{END secop_destino_gasto_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field50}
+				 
+					{BEGIN cellblock_grid_headcell_field51}
+	<th
+	
+	{$cell_grid_headcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_origen_de_los_recursos_class}
+			"
+
+			data-field="secop_origen_de_los_recursos"
+	
+	data-cellId="grid_headcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_origen_de_los_recursos_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field106" {$item_simple_grid_field106} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_origen_de_los_recursos">
+	{$label secop secop_origen_de_los_recursos }	</span>
+{END secop_origen_de_los_recursos_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field51}
+				 
+					{BEGIN cellblock_grid_headcell_field52}
+	<th
+	
+	{$cell_grid_headcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_d_as_adicionados_class}
+			"
+
+			data-field="secop_d_as_adicionados"
+	
+	data-cellId="grid_headcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_d_as_adicionados_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field107" {$item_simple_grid_field107} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_d_as_adicionados">
+	{$label secop secop_d_as_adicionados }	</span>
+{END secop_d_as_adicionados_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field52}
+				 
+					{BEGIN cellblock_grid_headcell_field53}
+	<th
+	
+	{$cell_grid_headcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_puntos_del_acuerdo_class}
+			"
+
+			data-field="secop_puntos_del_acuerdo"
+	
+	data-cellId="grid_headcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_puntos_del_acuerdo_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field108" {$item_simple_grid_field108} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_puntos_del_acuerdo">
+	{$label secop secop_puntos_del_acuerdo }	</span>
+{END secop_puntos_del_acuerdo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field53}
+				 
+					{BEGIN cellblock_grid_headcell_field54}
+	<th
+	
+	{$cell_grid_headcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_pilares_del_acuerdo_class}
+			"
+
+			data-field="secop_pilares_del_acuerdo"
+	
+	data-cellId="grid_headcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_pilares_del_acuerdo_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field109" {$item_simple_grid_field109} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_pilares_del_acuerdo">
+	{$label secop secop_pilares_del_acuerdo }	</span>
+{END secop_pilares_del_acuerdo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field54}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															{BEGIN grid_row}
+					<tbody>
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_id_class}
+			"
+
+			data-field="secop_id"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_id" data-default-width >
+{$secop_id_value}
+</span>
+{END secop_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_nombre_entidad_class}
+			"
+
+			data-field="secop_nombre_entidad"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_nombre_entidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_nombre_entidad" data-default-width >
+{$secop_nombre_entidad_value}
+</span>
+{END secop_nombre_entidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_nit_entidad_class}
+			"
+
+			data-field="secop_nit_entidad"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_nit_entidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_nit_entidad" data-default-width >
+{$secop_nit_entidad_value}
+</span>
+{END secop_nit_entidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_departamento_class}
+			"
+
+			data-field="secop_departamento"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_departamento_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_departamento" data-default-width >
+{$secop_departamento_value}
+</span>
+{END secop_departamento_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_ciudad_class}
+			"
+
+			data-field="secop_ciudad"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_ciudad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_ciudad" data-default-width >
+{$secop_ciudad_value}
+</span>
+{END secop_ciudad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_localizaci_n_class}
+			"
+
+			data-field="secop_localizaci_n"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_localizaci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_localizaci_n" data-default-width >
+{$secop_localizaci_n_value}
+</span>
+{END secop_localizaci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_orden_class}
+			"
+
+			data-field="secop_orden"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_orden_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_orden" data-default-width >
+{$secop_orden_value}
+</span>
+{END secop_orden_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_sector_class}
+			"
+
+			data-field="secop_sector"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_sector_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_sector" data-default-width >
+{$secop_sector_value}
+</span>
+{END secop_sector_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_rama_class}
+			"
+
+			data-field="secop_rama"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_rama_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_rama" data-default-width >
+{$secop_rama_value}
+</span>
+{END secop_rama_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_entidad_centralizada_class}
+			"
+
+			data-field="secop_entidad_centralizada"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_entidad_centralizada_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_entidad_centralizada" data-default-width >
+{$secop_entidad_centralizada_value}
+</span>
+{END secop_entidad_centralizada_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_proceso_de_compra_class}
+			"
+
+			data-field="secop_proceso_de_compra"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_proceso_de_compra_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_proceso_de_compra" data-default-width >
+{$secop_proceso_de_compra_value}
+</span>
+{END secop_proceso_de_compra_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_id_contrato_class}
+			"
+
+			data-field="secop_id_contrato"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_id_contrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_id_contrato" data-default-width >
+{$secop_id_contrato_value}
+</span>
+{END secop_id_contrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_referencia_del_contrato_class}
+			"
+
+			data-field="secop_referencia_del_contrato"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_referencia_del_contrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_referencia_del_contrato" data-default-width >
+{$secop_referencia_del_contrato_value}
+</span>
+{END secop_referencia_del_contrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_estado_contrato_class}
+			"
+
+			data-field="secop_estado_contrato"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_estado_contrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_estado_contrato" data-default-width >
+{$secop_estado_contrato_value}
+</span>
+{END secop_estado_contrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_codigo_de_categoria_principal_class}
+			"
+
+			data-field="secop_codigo_de_categoria_principal"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_codigo_de_categoria_principal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_codigo_de_categoria_principal" data-default-width >
+{$secop_codigo_de_categoria_principal_value}
+</span>
+{END secop_codigo_de_categoria_principal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_descripcion_del_proceso_class}
+			"
+
+			data-field="secop_descripcion_del_proceso"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_descripcion_del_proceso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_descripcion_del_proceso" data-default-width >
+{$secop_descripcion_del_proceso_value}
+</span>
+{END secop_descripcion_del_proceso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_tipo_de_contrato_class}
+			"
+
+			data-field="secop_tipo_de_contrato"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_tipo_de_contrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_tipo_de_contrato" data-default-width >
+{$secop_tipo_de_contrato_value}
+</span>
+{END secop_tipo_de_contrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_modalidad_de_contratacion_class}
+			"
+
+			data-field="secop_modalidad_de_contratacion"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_modalidad_de_contratacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_modalidad_de_contratacion" data-default-width >
+{$secop_modalidad_de_contratacion_value}
+</span>
+{END secop_modalidad_de_contratacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_justificacion_modalidad_de_class}
+			"
+
+			data-field="secop_justificacion_modalidad_de"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_justificacion_modalidad_de_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_justificacion_modalidad_de" data-default-width >
+{$secop_justificacion_modalidad_de_value}
+</span>
+{END secop_justificacion_modalidad_de_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_firma_class}
+			"
+
+			data-field="secop_fecha_de_firma"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_firma_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_firma" data-default-width >
+{$secop_fecha_de_firma_value}
+</span>
+{END secop_fecha_de_firma_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_inicio_del_contrato_class}
+			"
+
+			data-field="secop_fecha_de_inicio_del_contrato"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_inicio_del_contrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_inicio_del_contrato" data-default-width >
+{$secop_fecha_de_inicio_del_contrato_value}
+</span>
+{END secop_fecha_de_inicio_del_contrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_fin_del_contrato_class}
+			"
+
+			data-field="secop_fecha_de_fin_del_contrato"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_fin_del_contrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_fin_del_contrato" data-default-width >
+{$secop_fecha_de_fin_del_contrato_value}
+</span>
+{END secop_fecha_de_fin_del_contrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_inicio_de_ejecucion_class}
+			"
+
+			data-field="secop_fecha_de_inicio_de_ejecucion"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_inicio_de_ejecucion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_inicio_de_ejecucion" data-default-width >
+{$secop_fecha_de_inicio_de_ejecucion_value}
+</span>
+{END secop_fecha_de_inicio_de_ejecucion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_fecha_de_fin_de_ejecucion_class}
+			"
+
+			data-field="secop_fecha_de_fin_de_ejecucion"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_fecha_de_fin_de_ejecucion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_fecha_de_fin_de_ejecucion" data-default-width >
+{$secop_fecha_de_fin_de_ejecucion_value}
+</span>
+{END secop_fecha_de_fin_de_ejecucion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+				 
+					{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_condiciones_de_entrega_class}
+			"
+
+			data-field="secop_condiciones_de_entrega"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_condiciones_de_entrega_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_condiciones_de_entrega" data-default-width >
+{$secop_condiciones_de_entrega_value}
+</span>
+{END secop_condiciones_de_entrega_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+				 
+					{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_tipodocproveedor_class}
+			"
+
+			data-field="secop_tipodocproveedor"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_tipodocproveedor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_tipodocproveedor" data-default-width >
+{$secop_tipodocproveedor_value}
+</span>
+{END secop_tipodocproveedor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+				 
+					{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_documento_proveedor_class}
+			"
+
+			data-field="secop_documento_proveedor"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_documento_proveedor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_documento_proveedor" data-default-width >
+{$secop_documento_proveedor_value}
+</span>
+{END secop_documento_proveedor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+				 
+					{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_proveedor_adjudicado_class}
+			"
+
+			data-field="secop_proveedor_adjudicado"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_proveedor_adjudicado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_proveedor_adjudicado" data-default-width >
+{$secop_proveedor_adjudicado_value}
+</span>
+{END secop_proveedor_adjudicado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+				 
+					{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_es_grupo_class}
+			"
+
+			data-field="secop_es_grupo"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_es_grupo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_es_grupo" data-default-width >
+{$secop_es_grupo_value}
+</span>
+{END secop_es_grupo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+				 
+					{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_es_pyme_class}
+			"
+
+			data-field="secop_es_pyme"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_es_pyme_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_es_pyme" data-default-width >
+{$secop_es_pyme_value}
+</span>
+{END secop_es_pyme_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+				 
+					{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_habilita_pago_adelantado_class}
+			"
+
+			data-field="secop_habilita_pago_adelantado"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_habilita_pago_adelantado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_habilita_pago_adelantado" data-default-width >
+{$secop_habilita_pago_adelantado_value}
+</span>
+{END secop_habilita_pago_adelantado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+				 
+					{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_liquidaci_n_class}
+			"
+
+			data-field="secop_liquidaci_n"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_liquidaci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_liquidaci_n" data-default-width >
+{$secop_liquidaci_n_value}
+</span>
+{END secop_liquidaci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+				 
+					{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_obligaci_n_ambiental_class}
+			"
+
+			data-field="secop_obligaci_n_ambiental"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_obligaci_n_ambiental_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_obligaci_n_ambiental" data-default-width >
+{$secop_obligaci_n_ambiental_value}
+</span>
+{END secop_obligaci_n_ambiental_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+				 
+					{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_obligaciones_postconsumo_class}
+			"
+
+			data-field="secop_obligaciones_postconsumo"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_obligaciones_postconsumo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_obligaciones_postconsumo" data-default-width >
+{$secop_obligaciones_postconsumo_value}
+</span>
+{END secop_obligaciones_postconsumo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
+				 
+					{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_reversion_class}
+			"
+
+			data-field="secop_reversion"
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_reversion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_reversion" data-default-width >
+{$secop_reversion_value}
+</span>
+{END secop_reversion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field34}
+				 
+					{BEGIN cellblock_grid_cell_field35}
+	<td
+	
+	{$cell_grid_cell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_del_contrato_class}
+			"
+
+			data-field="secop_valor_del_contrato"
+	
+	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_del_contrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_del_contrato" data-default-width >
+{$secop_valor_del_contrato_value}
+</span>
+{END secop_valor_del_contrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field35}
+				 
+					{BEGIN cellblock_grid_cell_field36}
+	<td
+	
+	{$cell_grid_cell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_de_pago_adelantado_class}
+			"
+
+			data-field="secop_valor_de_pago_adelantado"
+	
+	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_de_pago_adelantado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_de_pago_adelantado" data-default-width >
+{$secop_valor_de_pago_adelantado_value}
+</span>
+{END secop_valor_de_pago_adelantado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field36}
+				 
+					{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_facturado_class}
+			"
+
+			data-field="secop_valor_facturado"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_facturado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_facturado" data-default-width >
+{$secop_valor_facturado_value}
+</span>
+{END secop_valor_facturado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+				 
+					{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_pendiente_de_pago_class}
+			"
+
+			data-field="secop_valor_pendiente_de_pago"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_pendiente_de_pago_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_pendiente_de_pago" data-default-width >
+{$secop_valor_pendiente_de_pago_value}
+</span>
+{END secop_valor_pendiente_de_pago_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+				 
+					{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_pagado_class}
+			"
+
+			data-field="secop_valor_pagado"
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_pagado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_pagado" data-default-width >
+{$secop_valor_pagado_value}
+</span>
+{END secop_valor_pagado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field39}
+				 
+					{BEGIN cellblock_grid_cell_field40}
+	<td
+	
+	{$cell_grid_cell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_amortizado_class}
+			"
+
+			data-field="secop_valor_amortizado"
+	
+	data-cellId="grid_cell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_amortizado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_amortizado" data-default-width >
+{$secop_valor_amortizado_value}
+</span>
+{END secop_valor_amortizado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field40}
+				 
+					{BEGIN cellblock_grid_cell_field41}
+	<td
+	
+	{$cell_grid_cell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_pendiente_de_class}
+			"
+
+			data-field="secop_valor_pendiente_de"
+	
+	data-cellId="grid_cell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_pendiente_de_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_pendiente_de" data-default-width >
+{$secop_valor_pendiente_de_value}
+</span>
+{END secop_valor_pendiente_de_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field41}
+				 
+					{BEGIN cellblock_grid_cell_field42}
+	<td
+	
+	{$cell_grid_cell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_valor_pendiente_de_ejecucion_class}
+			"
+
+			data-field="secop_valor_pendiente_de_ejecucion"
+	
+	data-cellId="grid_cell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_valor_pendiente_de_ejecucion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_valor_pendiente_de_ejecucion" data-default-width >
+{$secop_valor_pendiente_de_ejecucion_value}
+</span>
+{END secop_valor_pendiente_de_ejecucion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field42}
+				 
+					{BEGIN cellblock_grid_cell_field43}
+	<td
+	
+	{$cell_grid_cell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_estado_bpin_class}
+			"
+
+			data-field="secop_estado_bpin"
+	
+	data-cellId="grid_cell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_estado_bpin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_estado_bpin" data-default-width >
+{$secop_estado_bpin_value}
+</span>
+{END secop_estado_bpin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field43}
+				 
+					{BEGIN cellblock_grid_cell_field44}
+	<td
+	
+	{$cell_grid_cell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_c_digo_bpin_class}
+			"
+
+			data-field="secop_c_digo_bpin"
+	
+	data-cellId="grid_cell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_c_digo_bpin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_c_digo_bpin" data-default-width >
+{$secop_c_digo_bpin_value}
+</span>
+{END secop_c_digo_bpin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field44}
+				 
+					{BEGIN cellblock_grid_cell_field45}
+	<td
+	
+	{$cell_grid_cell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_anno_bpin_class}
+			"
+
+			data-field="secop_anno_bpin"
+	
+	data-cellId="grid_cell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_anno_bpin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_anno_bpin" data-default-width >
+{$secop_anno_bpin_value}
+</span>
+{END secop_anno_bpin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field45}
+				 
+					{BEGIN cellblock_grid_cell_field46}
+	<td
+	
+	{$cell_grid_cell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_saldo_cdp_class}
+			"
+
+			data-field="secop_saldo_cdp"
+	
+	data-cellId="grid_cell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_saldo_cdp_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_saldo_cdp" data-default-width >
+{$secop_saldo_cdp_value}
+</span>
+{END secop_saldo_cdp_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field46}
+				 
+					{BEGIN cellblock_grid_cell_field47}
+	<td
+	
+	{$cell_grid_cell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_saldo_vigencia_class}
+			"
+
+			data-field="secop_saldo_vigencia"
+	
+	data-cellId="grid_cell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_saldo_vigencia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_saldo_vigencia" data-default-width >
+{$secop_saldo_vigencia_value}
+</span>
+{END secop_saldo_vigencia_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field47}
+				 
+					{BEGIN cellblock_grid_cell_field48}
+	<td
+	
+	{$cell_grid_cell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_espostconflicto_class}
+			"
+
+			data-field="secop_espostconflicto"
+	
+	data-cellId="grid_cell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_espostconflicto_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_espostconflicto" data-default-width >
+{$secop_espostconflicto_value}
+</span>
+{END secop_espostconflicto_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field48}
+				 
+					{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_urlproceso_url_class}
+			"
+
+			data-field="secop_urlproceso_url"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_urlproceso_url_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_urlproceso_url" data-default-width >
+{$secop_urlproceso_url_value}
+</span>
+{END secop_urlproceso_url_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+				 
+					{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_destino_gasto_class}
+			"
+
+			data-field="secop_destino_gasto"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_destino_gasto_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_destino_gasto" data-default-width >
+{$secop_destino_gasto_value}
+</span>
+{END secop_destino_gasto_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+				 
+					{BEGIN cellblock_grid_cell_field51}
+	<td
+	
+	{$cell_grid_cell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_origen_de_los_recursos_class}
+			"
+
+			data-field="secop_origen_de_los_recursos"
+	
+	data-cellId="grid_cell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_origen_de_los_recursos_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_origen_de_los_recursos" data-default-width >
+{$secop_origen_de_los_recursos_value}
+</span>
+{END secop_origen_de_los_recursos_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field51}
+				 
+					{BEGIN cellblock_grid_cell_field52}
+	<td
+	
+	{$cell_grid_cell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_d_as_adicionados_class}
+			"
+
+			data-field="secop_d_as_adicionados"
+	
+	data-cellId="grid_cell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_d_as_adicionados_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_d_as_adicionados" data-default-width >
+{$secop_d_as_adicionados_value}
+</span>
+{END secop_d_as_adicionados_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field52}
+				 
+					{BEGIN cellblock_grid_cell_field53}
+	<td
+	
+	{$cell_grid_cell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_puntos_del_acuerdo_class}
+			"
+
+			data-field="secop_puntos_del_acuerdo"
+	
+	data-cellId="grid_cell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_puntos_del_acuerdo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_puntos_del_acuerdo" data-default-width >
+{$secop_puntos_del_acuerdo_value}
+</span>
+{END secop_puntos_del_acuerdo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field53}
+				 
+					{BEGIN cellblock_grid_cell_field54}
+	<td
+	
+	{$cell_grid_cell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$secop_pilares_del_acuerdo_class}
+			"
+
+			data-field="secop_pilares_del_acuerdo"
+	
+	data-cellId="grid_cell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN secop_pilares_del_acuerdo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secop_pilares_del_acuerdo" data-default-width >
+{$secop_pilares_del_acuerdo_value}
+</span>
+{END secop_pilares_del_acuerdo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field54}
+							</tr>
+					 
+					
+											</tbody>
+					{END grid_row}
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+				 
+					{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+				 
+					{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+				 
+					{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+				 
+					{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+				 
+					{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+				 
+					{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
+				 
+					{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+				 
+					{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+				 
+					{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
+				 
+					{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
+				 
+					{BEGIN cellblock_grid_footcell_field34}
+	<td
+	
+	{$cell_grid_footcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field34}
+				 
+					{BEGIN cellblock_grid_footcell_field35}
+	<td
+	
+	{$cell_grid_footcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field35}
+				 
+					{BEGIN cellblock_grid_footcell_field36}
+	<td
+	
+	{$cell_grid_footcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field36}
+				 
+					{BEGIN cellblock_grid_footcell_field37}
+	<td
+	
+	{$cell_grid_footcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field37}
+				 
+					{BEGIN cellblock_grid_footcell_field38}
+	<td
+	
+	{$cell_grid_footcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field38}
+				 
+					{BEGIN cellblock_grid_footcell_field39}
+	<td
+	
+	{$cell_grid_footcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field39}
+				 
+					{BEGIN cellblock_grid_footcell_field40}
+	<td
+	
+	{$cell_grid_footcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field40}
+				 
+					{BEGIN cellblock_grid_footcell_field41}
+	<td
+	
+	{$cell_grid_footcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field41}
+				 
+					{BEGIN cellblock_grid_footcell_field42}
+	<td
+	
+	{$cell_grid_footcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field42}
+				 
+					{BEGIN cellblock_grid_footcell_field43}
+	<td
+	
+	{$cell_grid_footcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field43}
+				 
+					{BEGIN cellblock_grid_footcell_field44}
+	<td
+	
+	{$cell_grid_footcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field44}
+				 
+					{BEGIN cellblock_grid_footcell_field45}
+	<td
+	
+	{$cell_grid_footcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field45}
+				 
+					{BEGIN cellblock_grid_footcell_field46}
+	<td
+	
+	{$cell_grid_footcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field46}
+				 
+					{BEGIN cellblock_grid_footcell_field47}
+	<td
+	
+	{$cell_grid_footcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field47}
+				 
+					{BEGIN cellblock_grid_footcell_field48}
+	<td
+	
+	{$cell_grid_footcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field48}
+				 
+					{BEGIN cellblock_grid_footcell_field49}
+	<td
+	
+	{$cell_grid_footcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field49}
+				 
+					{BEGIN cellblock_grid_footcell_field50}
+	<td
+	
+	{$cell_grid_footcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field50}
+				 
+					{BEGIN cellblock_grid_footcell_field51}
+	<td
+	
+	{$cell_grid_footcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field51}
+				 
+					{BEGIN cellblock_grid_footcell_field52}
+	<td
+	
+	{$cell_grid_footcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field52}
+				 
+					{BEGIN cellblock_grid_footcell_field53}
+	<td
+	
+	{$cell_grid_footcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field53}
+				 
+					{BEGIN cellblock_grid_footcell_field54}
+	<td
+	
+	{$cell_grid_footcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="secop_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field54}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

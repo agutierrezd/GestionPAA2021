@@ -1,0 +1,1429 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel secop edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN secop_nombre_entidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_nombre_entidad}  r-vertical-field" 
+	data-fieldname="secop.nombre_entidad" 
+	data-signal-error-for="secop_nombre_entidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="secop_nombre_entidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_nombre_entidad}">
+		{BEGIN secop_nombre_entidad_label}{$label secop secop_nombre_entidad }{END secop_nombre_entidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_nombre_entidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_nombre_entidad">
+		<div class="text-muted" >
+		{$tooltip secop secop_nombre_entidad }		</div>
+	</div>
+</div>
+
+
+{END secop_nombre_entidad_fieldblock}
+											
+{BEGIN secop_nit_entidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_nit_entidad}  r-vertical-field" 
+	data-fieldname="secop.nit_entidad" 
+	data-signal-error-for="secop_nit_entidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="secop_nit_entidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_nit_entidad}">
+		{BEGIN secop_nit_entidad_label}{$label secop secop_nit_entidad }{END secop_nit_entidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_nit_entidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_nit_entidad">
+		<div class="text-muted" >
+		{$tooltip secop secop_nit_entidad }		</div>
+	</div>
+</div>
+
+
+{END secop_nit_entidad_fieldblock}
+											
+{BEGIN secop_departamento_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_departamento}  r-vertical-field" 
+	data-fieldname="secop.departamento" 
+	data-signal-error-for="secop_departamento{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="secop_departamento" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_departamento}">
+		{BEGIN secop_departamento_label}{$label secop secop_departamento }{END secop_departamento_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_departamento_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_departamento">
+		<div class="text-muted" >
+		{$tooltip secop secop_departamento }		</div>
+	</div>
+</div>
+
+
+{END secop_departamento_fieldblock}
+											
+{BEGIN secop_ciudad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_ciudad}  r-vertical-field" 
+	data-fieldname="secop.ciudad" 
+	data-signal-error-for="secop_ciudad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="secop_ciudad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_ciudad}">
+		{BEGIN secop_ciudad_label}{$label secop secop_ciudad }{END secop_ciudad_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_ciudad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_ciudad">
+		<div class="text-muted" >
+		{$tooltip secop secop_ciudad }		</div>
+	</div>
+</div>
+
+
+{END secop_ciudad_fieldblock}
+											
+{BEGIN secop_localizaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_localizaci_n}  r-vertical-field" 
+	data-fieldname="secop.localizaci_n" 
+	data-signal-error-for="secop_localizaci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="secop_localizaci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_localizaci_n}">
+		{BEGIN secop_localizaci_n_label}{$label secop secop_localizaci_n }{END secop_localizaci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_localizaci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_localizaci_n">
+		<div class="text-muted" >
+		{$tooltip secop secop_localizaci_n }		</div>
+	</div>
+</div>
+
+
+{END secop_localizaci_n_fieldblock}
+											
+{BEGIN secop_orden_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_orden}  r-vertical-field" 
+	data-fieldname="secop.orden" 
+	data-signal-error-for="secop_orden{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="secop_orden" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_orden}">
+		{BEGIN secop_orden_label}{$label secop secop_orden }{END secop_orden_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_orden_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_orden">
+		<div class="text-muted" >
+		{$tooltip secop secop_orden }		</div>
+	</div>
+</div>
+
+
+{END secop_orden_fieldblock}
+											
+{BEGIN secop_sector_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_sector}  r-vertical-field" 
+	data-fieldname="secop.sector" 
+	data-signal-error-for="secop_sector{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="secop_sector" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_sector}">
+		{BEGIN secop_sector_label}{$label secop secop_sector }{END secop_sector_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_sector_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_sector">
+		<div class="text-muted" >
+		{$tooltip secop secop_sector }		</div>
+	</div>
+</div>
+
+
+{END secop_sector_fieldblock}
+											
+{BEGIN secop_rama_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_rama}  r-vertical-field" 
+	data-fieldname="secop.rama" 
+	data-signal-error-for="secop_rama{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="secop_rama" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_rama}">
+		{BEGIN secop_rama_label}{$label secop secop_rama }{END secop_rama_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_rama_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_rama">
+		<div class="text-muted" >
+		{$tooltip secop secop_rama }		</div>
+	</div>
+</div>
+
+
+{END secop_rama_fieldblock}
+											
+{BEGIN secop_entidad_centralizada_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_entidad_centralizada}  r-vertical-field" 
+	data-fieldname="secop.entidad_centralizada" 
+	data-signal-error-for="secop_entidad_centralizada{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="secop_entidad_centralizada" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_entidad_centralizada}">
+		{BEGIN secop_entidad_centralizada_label}{$label secop secop_entidad_centralizada }{END secop_entidad_centralizada_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_entidad_centralizada_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_entidad_centralizada">
+		<div class="text-muted" >
+		{$tooltip secop secop_entidad_centralizada }		</div>
+	</div>
+</div>
+
+
+{END secop_entidad_centralizada_fieldblock}
+											
+{BEGIN secop_proceso_de_compra_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_proceso_de_compra}  r-vertical-field" 
+	data-fieldname="secop.proceso_de_compra" 
+	data-signal-error-for="secop_proceso_de_compra{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="secop_proceso_de_compra" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_proceso_de_compra}">
+		{BEGIN secop_proceso_de_compra_label}{$label secop secop_proceso_de_compra }{END secop_proceso_de_compra_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_proceso_de_compra_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_proceso_de_compra">
+		<div class="text-muted" >
+		{$tooltip secop secop_proceso_de_compra }		</div>
+	</div>
+</div>
+
+
+{END secop_proceso_de_compra_fieldblock}
+											
+{BEGIN secop_id_contrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_id_contrato}  r-vertical-field" 
+	data-fieldname="secop.id_contrato" 
+	data-signal-error-for="secop_id_contrato{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="secop_id_contrato" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_id_contrato}">
+		{BEGIN secop_id_contrato_label}{$label secop secop_id_contrato }{END secop_id_contrato_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_id_contrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_id_contrato">
+		<div class="text-muted" >
+		{$tooltip secop secop_id_contrato }		</div>
+	</div>
+</div>
+
+
+{END secop_id_contrato_fieldblock}
+											
+{BEGIN secop_referencia_del_contrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_referencia_del_contrato}  r-vertical-field" 
+	data-fieldname="secop.referencia_del_contrato" 
+	data-signal-error-for="secop_referencia_del_contrato{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="secop_referencia_del_contrato" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_referencia_del_contrato}">
+		{BEGIN secop_referencia_del_contrato_label}{$label secop secop_referencia_del_contrato }{END secop_referencia_del_contrato_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_referencia_del_contrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_referencia_del_contrato">
+		<div class="text-muted" >
+		{$tooltip secop secop_referencia_del_contrato }		</div>
+	</div>
+</div>
+
+
+{END secop_referencia_del_contrato_fieldblock}
+											
+{BEGIN secop_estado_contrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_estado_contrato}  r-vertical-field" 
+	data-fieldname="secop.estado_contrato" 
+	data-signal-error-for="secop_estado_contrato{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="secop_estado_contrato" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_estado_contrato}">
+		{BEGIN secop_estado_contrato_label}{$label secop secop_estado_contrato }{END secop_estado_contrato_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_estado_contrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_estado_contrato">
+		<div class="text-muted" >
+		{$tooltip secop secop_estado_contrato }		</div>
+	</div>
+</div>
+
+
+{END secop_estado_contrato_fieldblock}
+											
+{BEGIN secop_codigo_de_categoria_principal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_codigo_de_categoria_principal}  r-vertical-field" 
+	data-fieldname="secop.codigo_de_categoria_principal" 
+	data-signal-error-for="secop_codigo_de_categoria_principal{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="secop_codigo_de_categoria_principal" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_codigo_de_categoria_principal}">
+		{BEGIN secop_codigo_de_categoria_principal_label}{$label secop secop_codigo_de_categoria_principal }{END secop_codigo_de_categoria_principal_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_codigo_de_categoria_principal_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_codigo_de_categoria_principal">
+		<div class="text-muted" >
+		{$tooltip secop secop_codigo_de_categoria_principal }		</div>
+	</div>
+</div>
+
+
+{END secop_codigo_de_categoria_principal_fieldblock}
+											
+{BEGIN secop_descripcion_del_proceso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_descripcion_del_proceso}  r-vertical-field" 
+	data-fieldname="secop.descripcion_del_proceso" 
+	data-signal-error-for="secop_descripcion_del_proceso{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="secop_descripcion_del_proceso" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_descripcion_del_proceso}">
+		{BEGIN secop_descripcion_del_proceso_label}{$label secop secop_descripcion_del_proceso }{END secop_descripcion_del_proceso_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_descripcion_del_proceso_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_descripcion_del_proceso">
+		<div class="text-muted" >
+		{$tooltip secop secop_descripcion_del_proceso }		</div>
+	</div>
+</div>
+
+
+{END secop_descripcion_del_proceso_fieldblock}
+											
+{BEGIN secop_tipo_de_contrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_tipo_de_contrato}  r-vertical-field" 
+	data-fieldname="secop.tipo_de_contrato" 
+	data-signal-error-for="secop_tipo_de_contrato{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="secop_tipo_de_contrato" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_tipo_de_contrato}">
+		{BEGIN secop_tipo_de_contrato_label}{$label secop secop_tipo_de_contrato }{END secop_tipo_de_contrato_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_tipo_de_contrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_tipo_de_contrato">
+		<div class="text-muted" >
+		{$tooltip secop secop_tipo_de_contrato }		</div>
+	</div>
+</div>
+
+
+{END secop_tipo_de_contrato_fieldblock}
+											
+{BEGIN secop_modalidad_de_contratacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_modalidad_de_contratacion}  r-vertical-field" 
+	data-fieldname="secop.modalidad_de_contratacion" 
+	data-signal-error-for="secop_modalidad_de_contratacion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="secop_modalidad_de_contratacion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_modalidad_de_contratacion}">
+		{BEGIN secop_modalidad_de_contratacion_label}{$label secop secop_modalidad_de_contratacion }{END secop_modalidad_de_contratacion_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_modalidad_de_contratacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_modalidad_de_contratacion">
+		<div class="text-muted" >
+		{$tooltip secop secop_modalidad_de_contratacion }		</div>
+	</div>
+</div>
+
+
+{END secop_modalidad_de_contratacion_fieldblock}
+											
+{BEGIN secop_justificacion_modalidad_de_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_justificacion_modalidad_de}  r-vertical-field" 
+	data-fieldname="secop.justificacion_modalidad_de" 
+	data-signal-error-for="secop_justificacion_modalidad_de{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="secop_justificacion_modalidad_de" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_justificacion_modalidad_de}">
+		{BEGIN secop_justificacion_modalidad_de_label}{$label secop secop_justificacion_modalidad_de }{END secop_justificacion_modalidad_de_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_justificacion_modalidad_de_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_justificacion_modalidad_de">
+		<div class="text-muted" >
+		{$tooltip secop secop_justificacion_modalidad_de }		</div>
+	</div>
+</div>
+
+
+{END secop_justificacion_modalidad_de_fieldblock}
+											
+{BEGIN secop_fecha_de_firma_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_fecha_de_firma}  r-vertical-field" 
+	data-fieldname="secop.fecha_de_firma" 
+	data-signal-error-for="secop_fecha_de_firma{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="secop_fecha_de_firma" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_fecha_de_firma}">
+		{BEGIN secop_fecha_de_firma_label}{$label secop secop_fecha_de_firma }{END secop_fecha_de_firma_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_fecha_de_firma_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_fecha_de_firma">
+		<div class="text-muted" >
+		{$tooltip secop secop_fecha_de_firma }		</div>
+	</div>
+</div>
+
+
+{END secop_fecha_de_firma_fieldblock}
+											
+{BEGIN secop_fecha_de_inicio_del_contrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_fecha_de_inicio_del_contrato}  r-vertical-field" 
+	data-fieldname="secop.fecha_de_inicio_del_contrato" 
+	data-signal-error-for="secop_fecha_de_inicio_del_contrato{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="secop_fecha_de_inicio_del_contrato" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_fecha_de_inicio_del_contrato}">
+		{BEGIN secop_fecha_de_inicio_del_contrato_label}{$label secop secop_fecha_de_inicio_del_contrato }{END secop_fecha_de_inicio_del_contrato_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_fecha_de_inicio_del_contrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_fecha_de_inicio_del_contrato">
+		<div class="text-muted" >
+		{$tooltip secop secop_fecha_de_inicio_del_contrato }		</div>
+	</div>
+</div>
+
+
+{END secop_fecha_de_inicio_del_contrato_fieldblock}
+											
+{BEGIN secop_fecha_de_fin_del_contrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_fecha_de_fin_del_contrato}  r-vertical-field" 
+	data-fieldname="secop.fecha_de_fin_del_contrato" 
+	data-signal-error-for="secop_fecha_de_fin_del_contrato{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="secop_fecha_de_fin_del_contrato" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_fecha_de_fin_del_contrato}">
+		{BEGIN secop_fecha_de_fin_del_contrato_label}{$label secop secop_fecha_de_fin_del_contrato }{END secop_fecha_de_fin_del_contrato_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_fecha_de_fin_del_contrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_fecha_de_fin_del_contrato">
+		<div class="text-muted" >
+		{$tooltip secop secop_fecha_de_fin_del_contrato }		</div>
+	</div>
+</div>
+
+
+{END secop_fecha_de_fin_del_contrato_fieldblock}
+											
+{BEGIN secop_fecha_de_inicio_de_ejecucion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_fecha_de_inicio_de_ejecucion}  r-vertical-field" 
+	data-fieldname="secop.fecha_de_inicio_de_ejecucion" 
+	data-signal-error-for="secop_fecha_de_inicio_de_ejecucion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="secop_fecha_de_inicio_de_ejecucion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_fecha_de_inicio_de_ejecucion}">
+		{BEGIN secop_fecha_de_inicio_de_ejecucion_label}{$label secop secop_fecha_de_inicio_de_ejecucion }{END secop_fecha_de_inicio_de_ejecucion_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_fecha_de_inicio_de_ejecucion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_fecha_de_inicio_de_ejecucion">
+		<div class="text-muted" >
+		{$tooltip secop secop_fecha_de_inicio_de_ejecucion }		</div>
+	</div>
+</div>
+
+
+{END secop_fecha_de_inicio_de_ejecucion_fieldblock}
+											
+{BEGIN secop_fecha_de_fin_de_ejecucion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_fecha_de_fin_de_ejecucion}  r-vertical-field" 
+	data-fieldname="secop.fecha_de_fin_de_ejecucion" 
+	data-signal-error-for="secop_fecha_de_fin_de_ejecucion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="secop_fecha_de_fin_de_ejecucion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_fecha_de_fin_de_ejecucion}">
+		{BEGIN secop_fecha_de_fin_de_ejecucion_label}{$label secop secop_fecha_de_fin_de_ejecucion }{END secop_fecha_de_fin_de_ejecucion_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_fecha_de_fin_de_ejecucion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_fecha_de_fin_de_ejecucion">
+		<div class="text-muted" >
+		{$tooltip secop secop_fecha_de_fin_de_ejecucion }		</div>
+	</div>
+</div>
+
+
+{END secop_fecha_de_fin_de_ejecucion_fieldblock}
+											
+{BEGIN secop_condiciones_de_entrega_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_condiciones_de_entrega}  r-vertical-field" 
+	data-fieldname="secop.condiciones_de_entrega" 
+	data-signal-error-for="secop_condiciones_de_entrega{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="secop_condiciones_de_entrega" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_condiciones_de_entrega}">
+		{BEGIN secop_condiciones_de_entrega_label}{$label secop secop_condiciones_de_entrega }{END secop_condiciones_de_entrega_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_condiciones_de_entrega_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_condiciones_de_entrega">
+		<div class="text-muted" >
+		{$tooltip secop secop_condiciones_de_entrega }		</div>
+	</div>
+</div>
+
+
+{END secop_condiciones_de_entrega_fieldblock}
+											
+{BEGIN secop_tipodocproveedor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_tipodocproveedor}  r-vertical-field" 
+	data-fieldname="secop.tipodocproveedor" 
+	data-signal-error-for="secop_tipodocproveedor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="secop_tipodocproveedor" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_tipodocproveedor}">
+		{BEGIN secop_tipodocproveedor_label}{$label secop secop_tipodocproveedor }{END secop_tipodocproveedor_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_tipodocproveedor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_tipodocproveedor">
+		<div class="text-muted" >
+		{$tooltip secop secop_tipodocproveedor }		</div>
+	</div>
+</div>
+
+
+{END secop_tipodocproveedor_fieldblock}
+											
+{BEGIN secop_documento_proveedor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_documento_proveedor}  r-vertical-field" 
+	data-fieldname="secop.documento_proveedor" 
+	data-signal-error-for="secop_documento_proveedor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="secop_documento_proveedor" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_documento_proveedor}">
+		{BEGIN secop_documento_proveedor_label}{$label secop secop_documento_proveedor }{END secop_documento_proveedor_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_documento_proveedor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_documento_proveedor">
+		<div class="text-muted" >
+		{$tooltip secop secop_documento_proveedor }		</div>
+	</div>
+</div>
+
+
+{END secop_documento_proveedor_fieldblock}
+											
+{BEGIN secop_proveedor_adjudicado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_proveedor_adjudicado}  r-vertical-field" 
+	data-fieldname="secop.proveedor_adjudicado" 
+	data-signal-error-for="secop_proveedor_adjudicado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="secop_proveedor_adjudicado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_proveedor_adjudicado}">
+		{BEGIN secop_proveedor_adjudicado_label}{$label secop secop_proveedor_adjudicado }{END secop_proveedor_adjudicado_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_proveedor_adjudicado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_proveedor_adjudicado">
+		<div class="text-muted" >
+		{$tooltip secop secop_proveedor_adjudicado }		</div>
+	</div>
+</div>
+
+
+{END secop_proveedor_adjudicado_fieldblock}
+											
+{BEGIN secop_es_grupo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_es_grupo}  r-vertical-field" 
+	data-fieldname="secop.es_grupo" 
+	data-signal-error-for="secop_es_grupo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="secop_es_grupo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_es_grupo}">
+		{BEGIN secop_es_grupo_label}{$label secop secop_es_grupo }{END secop_es_grupo_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_es_grupo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_es_grupo">
+		<div class="text-muted" >
+		{$tooltip secop secop_es_grupo }		</div>
+	</div>
+</div>
+
+
+{END secop_es_grupo_fieldblock}
+											
+{BEGIN secop_es_pyme_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_es_pyme}  r-vertical-field" 
+	data-fieldname="secop.es_pyme" 
+	data-signal-error-for="secop_es_pyme{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="secop_es_pyme" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_es_pyme}">
+		{BEGIN secop_es_pyme_label}{$label secop secop_es_pyme }{END secop_es_pyme_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_es_pyme_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_es_pyme">
+		<div class="text-muted" >
+		{$tooltip secop secop_es_pyme }		</div>
+	</div>
+</div>
+
+
+{END secop_es_pyme_fieldblock}
+											
+{BEGIN secop_habilita_pago_adelantado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_habilita_pago_adelantado}  r-vertical-field" 
+	data-fieldname="secop.habilita_pago_adelantado" 
+	data-signal-error-for="secop_habilita_pago_adelantado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="secop_habilita_pago_adelantado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_habilita_pago_adelantado}">
+		{BEGIN secop_habilita_pago_adelantado_label}{$label secop secop_habilita_pago_adelantado }{END secop_habilita_pago_adelantado_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_habilita_pago_adelantado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_habilita_pago_adelantado">
+		<div class="text-muted" >
+		{$tooltip secop secop_habilita_pago_adelantado }		</div>
+	</div>
+</div>
+
+
+{END secop_habilita_pago_adelantado_fieldblock}
+											
+{BEGIN secop_liquidaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_liquidaci_n}  r-vertical-field" 
+	data-fieldname="secop.liquidaci_n" 
+	data-signal-error-for="secop_liquidaci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="secop_liquidaci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_liquidaci_n}">
+		{BEGIN secop_liquidaci_n_label}{$label secop secop_liquidaci_n }{END secop_liquidaci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_liquidaci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_liquidaci_n">
+		<div class="text-muted" >
+		{$tooltip secop secop_liquidaci_n }		</div>
+	</div>
+</div>
+
+
+{END secop_liquidaci_n_fieldblock}
+											
+{BEGIN secop_obligaci_n_ambiental_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_obligaci_n_ambiental}  r-vertical-field" 
+	data-fieldname="secop.obligaci_n_ambiental" 
+	data-signal-error-for="secop_obligaci_n_ambiental{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="secop_obligaci_n_ambiental" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_obligaci_n_ambiental}">
+		{BEGIN secop_obligaci_n_ambiental_label}{$label secop secop_obligaci_n_ambiental }{END secop_obligaci_n_ambiental_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_obligaci_n_ambiental_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_obligaci_n_ambiental">
+		<div class="text-muted" >
+		{$tooltip secop secop_obligaci_n_ambiental }		</div>
+	</div>
+</div>
+
+
+{END secop_obligaci_n_ambiental_fieldblock}
+											
+{BEGIN secop_obligaciones_postconsumo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_obligaciones_postconsumo}  r-vertical-field" 
+	data-fieldname="secop.obligaciones_postconsumo" 
+	data-signal-error-for="secop_obligaciones_postconsumo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="secop_obligaciones_postconsumo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_obligaciones_postconsumo}">
+		{BEGIN secop_obligaciones_postconsumo_label}{$label secop secop_obligaciones_postconsumo }{END secop_obligaciones_postconsumo_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_obligaciones_postconsumo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_obligaciones_postconsumo">
+		<div class="text-muted" >
+		{$tooltip secop secop_obligaciones_postconsumo }		</div>
+	</div>
+</div>
+
+
+{END secop_obligaciones_postconsumo_fieldblock}
+											
+{BEGIN secop_reversion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_reversion}  r-vertical-field" 
+	data-fieldname="secop.reversion" 
+	data-signal-error-for="secop_reversion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="secop_reversion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_reversion}">
+		{BEGIN secop_reversion_label}{$label secop secop_reversion }{END secop_reversion_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_reversion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_reversion">
+		<div class="text-muted" >
+		{$tooltip secop secop_reversion }		</div>
+	</div>
+</div>
+
+
+{END secop_reversion_fieldblock}
+											
+{BEGIN secop_valor_del_contrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_valor_del_contrato}  r-vertical-field" 
+	data-fieldname="secop.valor_del_contrato" 
+	data-signal-error-for="secop_valor_del_contrato{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="secop_valor_del_contrato" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_valor_del_contrato}">
+		{BEGIN secop_valor_del_contrato_label}{$label secop secop_valor_del_contrato }{END secop_valor_del_contrato_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_valor_del_contrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_valor_del_contrato">
+		<div class="text-muted" >
+		{$tooltip secop secop_valor_del_contrato }		</div>
+	</div>
+</div>
+
+
+{END secop_valor_del_contrato_fieldblock}
+											
+{BEGIN secop_valor_de_pago_adelantado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_valor_de_pago_adelantado}  r-vertical-field" 
+	data-fieldname="secop.valor_de_pago_adelantado" 
+	data-signal-error-for="secop_valor_de_pago_adelantado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="secop_valor_de_pago_adelantado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_valor_de_pago_adelantado}">
+		{BEGIN secop_valor_de_pago_adelantado_label}{$label secop secop_valor_de_pago_adelantado }{END secop_valor_de_pago_adelantado_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_valor_de_pago_adelantado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_valor_de_pago_adelantado">
+		<div class="text-muted" >
+		{$tooltip secop secop_valor_de_pago_adelantado }		</div>
+	</div>
+</div>
+
+
+{END secop_valor_de_pago_adelantado_fieldblock}
+											
+{BEGIN secop_valor_facturado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_valor_facturado}  r-vertical-field" 
+	data-fieldname="secop.valor_facturado" 
+	data-signal-error-for="secop_valor_facturado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="secop_valor_facturado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_valor_facturado}">
+		{BEGIN secop_valor_facturado_label}{$label secop secop_valor_facturado }{END secop_valor_facturado_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_valor_facturado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_valor_facturado">
+		<div class="text-muted" >
+		{$tooltip secop secop_valor_facturado }		</div>
+	</div>
+</div>
+
+
+{END secop_valor_facturado_fieldblock}
+											
+{BEGIN secop_valor_pendiente_de_pago_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_valor_pendiente_de_pago}  r-vertical-field" 
+	data-fieldname="secop.valor_pendiente_de_pago" 
+	data-signal-error-for="secop_valor_pendiente_de_pago{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="secop_valor_pendiente_de_pago" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_valor_pendiente_de_pago}">
+		{BEGIN secop_valor_pendiente_de_pago_label}{$label secop secop_valor_pendiente_de_pago }{END secop_valor_pendiente_de_pago_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_valor_pendiente_de_pago_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_valor_pendiente_de_pago">
+		<div class="text-muted" >
+		{$tooltip secop secop_valor_pendiente_de_pago }		</div>
+	</div>
+</div>
+
+
+{END secop_valor_pendiente_de_pago_fieldblock}
+											
+{BEGIN secop_valor_pagado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_valor_pagado}  r-vertical-field" 
+	data-fieldname="secop.valor_pagado" 
+	data-signal-error-for="secop_valor_pagado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="secop_valor_pagado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_valor_pagado}">
+		{BEGIN secop_valor_pagado_label}{$label secop secop_valor_pagado }{END secop_valor_pagado_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_valor_pagado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_valor_pagado">
+		<div class="text-muted" >
+		{$tooltip secop secop_valor_pagado }		</div>
+	</div>
+</div>
+
+
+{END secop_valor_pagado_fieldblock}
+											
+{BEGIN secop_valor_amortizado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_valor_amortizado}  r-vertical-field" 
+	data-fieldname="secop.valor_amortizado" 
+	data-signal-error-for="secop_valor_amortizado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="secop_valor_amortizado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_valor_amortizado}">
+		{BEGIN secop_valor_amortizado_label}{$label secop secop_valor_amortizado }{END secop_valor_amortizado_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_valor_amortizado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_valor_amortizado">
+		<div class="text-muted" >
+		{$tooltip secop secop_valor_amortizado }		</div>
+	</div>
+</div>
+
+
+{END secop_valor_amortizado_fieldblock}
+											
+{BEGIN secop_valor_pendiente_de_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_valor_pendiente_de}  r-vertical-field" 
+	data-fieldname="secop.valor_pendiente_de" 
+	data-signal-error-for="secop_valor_pendiente_de{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="secop_valor_pendiente_de" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_valor_pendiente_de}">
+		{BEGIN secop_valor_pendiente_de_label}{$label secop secop_valor_pendiente_de }{END secop_valor_pendiente_de_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_valor_pendiente_de_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_valor_pendiente_de">
+		<div class="text-muted" >
+		{$tooltip secop secop_valor_pendiente_de }		</div>
+	</div>
+</div>
+
+
+{END secop_valor_pendiente_de_fieldblock}
+											
+{BEGIN secop_valor_pendiente_de_ejecucion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_valor_pendiente_de_ejecucion}  r-vertical-field" 
+	data-fieldname="secop.valor_pendiente_de_ejecucion" 
+	data-signal-error-for="secop_valor_pendiente_de_ejecucion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field41" {$item_integrated_edit_field41} data-pageid="{$pageid}" data-field="secop_valor_pendiente_de_ejecucion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_valor_pendiente_de_ejecucion}">
+		{BEGIN secop_valor_pendiente_de_ejecucion_label}{$label secop secop_valor_pendiente_de_ejecucion }{END secop_valor_pendiente_de_ejecucion_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_valor_pendiente_de_ejecucion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_valor_pendiente_de_ejecucion">
+		<div class="text-muted" >
+		{$tooltip secop secop_valor_pendiente_de_ejecucion }		</div>
+	</div>
+</div>
+
+
+{END secop_valor_pendiente_de_ejecucion_fieldblock}
+											
+{BEGIN secop_estado_bpin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_estado_bpin}  r-vertical-field" 
+	data-fieldname="secop.estado_bpin" 
+	data-signal-error-for="secop_estado_bpin{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field42" {$item_integrated_edit_field42} data-pageid="{$pageid}" data-field="secop_estado_bpin" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_estado_bpin}">
+		{BEGIN secop_estado_bpin_label}{$label secop secop_estado_bpin }{END secop_estado_bpin_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_estado_bpin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_estado_bpin">
+		<div class="text-muted" >
+		{$tooltip secop secop_estado_bpin }		</div>
+	</div>
+</div>
+
+
+{END secop_estado_bpin_fieldblock}
+											
+{BEGIN secop_c_digo_bpin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_c_digo_bpin}  r-vertical-field" 
+	data-fieldname="secop.c_digo_bpin" 
+	data-signal-error-for="secop_c_digo_bpin{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="secop_c_digo_bpin" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_c_digo_bpin}">
+		{BEGIN secop_c_digo_bpin_label}{$label secop secop_c_digo_bpin }{END secop_c_digo_bpin_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_c_digo_bpin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_c_digo_bpin">
+		<div class="text-muted" >
+		{$tooltip secop secop_c_digo_bpin }		</div>
+	</div>
+</div>
+
+
+{END secop_c_digo_bpin_fieldblock}
+											
+{BEGIN secop_anno_bpin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_anno_bpin}  r-vertical-field" 
+	data-fieldname="secop.anno_bpin" 
+	data-signal-error-for="secop_anno_bpin{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="secop_anno_bpin" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_anno_bpin}">
+		{BEGIN secop_anno_bpin_label}{$label secop secop_anno_bpin }{END secop_anno_bpin_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_anno_bpin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_anno_bpin">
+		<div class="text-muted" >
+		{$tooltip secop secop_anno_bpin }		</div>
+	</div>
+</div>
+
+
+{END secop_anno_bpin_fieldblock}
+											
+{BEGIN secop_saldo_cdp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_saldo_cdp}  r-vertical-field" 
+	data-fieldname="secop.saldo_cdp" 
+	data-signal-error-for="secop_saldo_cdp{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="secop_saldo_cdp" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_saldo_cdp}">
+		{BEGIN secop_saldo_cdp_label}{$label secop secop_saldo_cdp }{END secop_saldo_cdp_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_saldo_cdp_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_saldo_cdp">
+		<div class="text-muted" >
+		{$tooltip secop secop_saldo_cdp }		</div>
+	</div>
+</div>
+
+
+{END secop_saldo_cdp_fieldblock}
+											
+{BEGIN secop_saldo_vigencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_saldo_vigencia}  r-vertical-field" 
+	data-fieldname="secop.saldo_vigencia" 
+	data-signal-error-for="secop_saldo_vigencia{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="secop_saldo_vigencia" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_saldo_vigencia}">
+		{BEGIN secop_saldo_vigencia_label}{$label secop secop_saldo_vigencia }{END secop_saldo_vigencia_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_saldo_vigencia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_saldo_vigencia">
+		<div class="text-muted" >
+		{$tooltip secop secop_saldo_vigencia }		</div>
+	</div>
+</div>
+
+
+{END secop_saldo_vigencia_fieldblock}
+											
+{BEGIN secop_espostconflicto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_espostconflicto}  r-vertical-field" 
+	data-fieldname="secop.espostconflicto" 
+	data-signal-error-for="secop_espostconflicto{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="secop_espostconflicto" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_espostconflicto}">
+		{BEGIN secop_espostconflicto_label}{$label secop secop_espostconflicto }{END secop_espostconflicto_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_espostconflicto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_espostconflicto">
+		<div class="text-muted" >
+		{$tooltip secop secop_espostconflicto }		</div>
+	</div>
+</div>
+
+
+{END secop_espostconflicto_fieldblock}
+											
+{BEGIN secop_urlproceso_url_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_urlproceso_url}  r-vertical-field" 
+	data-fieldname="secop.urlproceso.url" 
+	data-signal-error-for="secop_urlproceso_url{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="secop_urlproceso_url" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_urlproceso_url}">
+		{BEGIN secop_urlproceso_url_label}{$label secop secop_urlproceso_url }{END secop_urlproceso_url_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_urlproceso_url_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_urlproceso_url">
+		<div class="text-muted" >
+		{$tooltip secop secop_urlproceso_url }		</div>
+	</div>
+</div>
+
+
+{END secop_urlproceso_url_fieldblock}
+											
+{BEGIN secop_destino_gasto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_destino_gasto}  r-vertical-field" 
+	data-fieldname="secop.destino_gasto" 
+	data-signal-error-for="secop_destino_gasto{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="secop_destino_gasto" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_destino_gasto}">
+		{BEGIN secop_destino_gasto_label}{$label secop secop_destino_gasto }{END secop_destino_gasto_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_destino_gasto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_destino_gasto">
+		<div class="text-muted" >
+		{$tooltip secop secop_destino_gasto }		</div>
+	</div>
+</div>
+
+
+{END secop_destino_gasto_fieldblock}
+											
+{BEGIN secop_origen_de_los_recursos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_origen_de_los_recursos}  r-vertical-field" 
+	data-fieldname="secop.origen_de_los_recursos" 
+	data-signal-error-for="secop_origen_de_los_recursos{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="secop_origen_de_los_recursos" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_origen_de_los_recursos}">
+		{BEGIN secop_origen_de_los_recursos_label}{$label secop secop_origen_de_los_recursos }{END secop_origen_de_los_recursos_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_origen_de_los_recursos_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_origen_de_los_recursos">
+		<div class="text-muted" >
+		{$tooltip secop secop_origen_de_los_recursos }		</div>
+	</div>
+</div>
+
+
+{END secop_origen_de_los_recursos_fieldblock}
+											
+{BEGIN secop_d_as_adicionados_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_d_as_adicionados}  r-vertical-field" 
+	data-fieldname="secop.d_as_adicionados" 
+	data-signal-error-for="secop_d_as_adicionados{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field51" {$item_integrated_edit_field51} data-pageid="{$pageid}" data-field="secop_d_as_adicionados" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_d_as_adicionados}">
+		{BEGIN secop_d_as_adicionados_label}{$label secop secop_d_as_adicionados }{END secop_d_as_adicionados_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_d_as_adicionados_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_d_as_adicionados">
+		<div class="text-muted" >
+		{$tooltip secop secop_d_as_adicionados }		</div>
+	</div>
+</div>
+
+
+{END secop_d_as_adicionados_fieldblock}
+											
+{BEGIN secop_puntos_del_acuerdo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_puntos_del_acuerdo}  r-vertical-field" 
+	data-fieldname="secop.puntos_del_acuerdo" 
+	data-signal-error-for="secop_puntos_del_acuerdo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field52" {$item_integrated_edit_field52} data-pageid="{$pageid}" data-field="secop_puntos_del_acuerdo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_puntos_del_acuerdo}">
+		{BEGIN secop_puntos_del_acuerdo_label}{$label secop secop_puntos_del_acuerdo }{END secop_puntos_del_acuerdo_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_puntos_del_acuerdo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_puntos_del_acuerdo">
+		<div class="text-muted" >
+		{$tooltip secop secop_puntos_del_acuerdo }		</div>
+	</div>
+</div>
+
+
+{END secop_puntos_del_acuerdo_fieldblock}
+											
+{BEGIN secop_pilares_del_acuerdo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secop_pilares_del_acuerdo}  r-vertical-field" 
+	data-fieldname="secop.pilares_del_acuerdo" 
+	data-signal-error-for="secop_pilares_del_acuerdo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="secop_pilares_del_acuerdo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secop_pilares_del_acuerdo}">
+		{BEGIN secop_pilares_del_acuerdo_label}{$label secop secop_pilares_del_acuerdo }{END secop_pilares_del_acuerdo_label}
+	</label>
+	<div class="r-edit-field">
+		{$secop_pilares_del_acuerdo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secop_pilares_del_acuerdo">
+		<div class="text-muted" >
+		{$tooltip secop secop_pilares_del_acuerdo }		</div>
+	</div>
+</div>
+
+
+{END secop_pilares_del_acuerdo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
